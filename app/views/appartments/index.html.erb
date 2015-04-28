@@ -1,0 +1,16 @@
+<h1>Appartment Listings</h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+<% @appartments.each do |appartment| %>
+
+ <tr>
+      <td><%= appartment.title %></td>
+      <td><%= appartment.description %></td>
+    </tr>
+
+<% end %>
+
+</table>
