@@ -1,6 +1,8 @@
-<h1>NEW APPARTMENTS</h1>
+<h1>Editing Appartment</h1>
 
-<%= simple_form_for :appartment, url: appartments_path do |form| %>
+
+
+<%= simple_form_for :appartment, url: appartments_path(@appartment) do |form| %>
   <%= form.input :title, label: "Apartment Title" %><br>
   <%= form.input :description, label: "Appartment Description" %><br>
   <%= form.input :image, label: "Appartment Image" %><br>
